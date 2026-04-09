@@ -3,17 +3,13 @@ Organization: CDC/NCEZID/DHQP/SB
 
 Contact email: ncezid_shareit@cdc.gov
 
-Contract#: 
+Description: The Statistics Team members within the Surveillance Branch (SB), DHQP, have developed a series of statistical comparison functions.  These functions were developed to conduct statistical tests for epidemiological measures and summary statistics, especially those consistent with the methods used by National Healthcare Safety Network (NHSN).  
 
-Description: The Statistics Team members within the Surveillance Branch (SB), DHQP, have developed a series of statistical comparison functions.  These functions were developed to conduct statistical tests for epidemiological measures, consistent with the methods used by NHSN. 
+Initial statistical comparison functions test several common epidemiology measures namely incidence density rates, proportions, and ratios such as standardized metrics known as the standardized infection ratio (SIR), standardized utilization ratio (SUR), standardized antimicrobial administration ratio (SAAR), etc., and all statistical tests are based on the mid-p exact method. These functions were originally written using the SAS macro language in early 2010s.  Six SAS macros were distributed for internal analysis use within CDC’s SB, and were integrated in  the NHSN web application to support users, as well as published on the NHSN website for public use (https://www.cdc.gov/nhsn/ps-analysis-resources/index.html). In early 2026, NHSN updated functionality of these six macros and developed equivalent Python and R versions comparable to the original SAS implementations.
 
-Initial statistical comparison functions tested common epidemiological measures such as incidence density rates, proportions, and ratios such as standardized metrics known as the standardized infection ratio (SIR), standardized utilization ratio (SUR), standardized antimicrobial administration ratio (SAAR), etc., and all statistical tests are based on the mid-p exact method. The original language for these comparisons were produced using SAS in macro form in early 2010s.  Six SAS macros were distributed for internal analysis use within SB, utilized within the NHSN web application, as well as published on the NHSN website for public use (https://www.cdc.gov/nhsn/ps-analysis-resources/index.html). In 2025, NHSN updated functionality of these six macros and developed equivalent Python and R versions comparable to the original SAS implementations. 
-
-In 2026, we have also added an additional R function that compares summary statistics such as medians and empirical cumulative distribution functions using nonparametric methods such as the Brown-Mood median and both Anderson-Darling and Dowd DTS ECDF tests
-We have created SAS, Python and R subfolders in NHSN Github repository to store statistical functions and quick reference guides for corresponding programming languages ( https://github.com/cdcent/statistical-comparison-functions-using-SAS-R-Python ).
+To further complement the statistical analysis of epidemiological data, an additional function written in R was developed to compare summary statistics such as the medians and empirical cumulative distribution functions (ECDFs) among two groups for any numeric variable.  This function uses nonparametric methods such as Brown-Mood median test and both the Anderson-Darling and Dowd DTS tests for comparing ECDFs.A quick reference guide on these SAS macros and functions has been provided containing example use cases on the landing page forGITHUB internal users (CDCENT). Subfolders for SAS, Python and R have been created to organize the statistical functions by corresponding programming languages.  
 
 We’ve chosen to use the term ‘function’ to more generically refer and describe these routines although they were originally developed as SAS macros at first.
-
 
 Languages: R, Python, Other
 
